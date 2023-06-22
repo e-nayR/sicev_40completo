@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Montserrat :wght@300;400;500;600;700;800 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+nav {
+    height: 4rem;
+    padding: 2vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #003993 0%, #0158b9 46%, #0268cb 96%);
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img{
+    height: 3.5rem;
+    width: 14rem;
+    border-radius: 3px;
+}
+
+nav p{
+    color: #fafafa;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.h3-sidebar{
+    color: #333;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+.sidebar i {
+    margin-right: 13px;
+    font-size: 1.1em;
+}
+
+.sidebar a{
+    padding: 15px;
+    font-size: 1.3rem;
+    color: #0149a6;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar .option-sidebar{
+    background-color: #fafafa;
+    color: #0149a6;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+
+.sidebar .option-sidebar:hover{
+    border-left: 4px solid #73b4ff;
+    background-color: #f1f1f1;
+    color: #73b4ff;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: .1s ease;
+}
+
+.sidebar a span{
+    position: absolute;
+    left: 15em;
+}
+
+.sidebar a span i {
+    font-size: 20px;
+}
+
+.sidebar{
+    background-color: #fafafa;
+    width: 15%;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.content{
+    width: 85%;
+    background-color: #f5f5f5;
+    padding: 20px 20px;
+}
+
+.title-section{
+    background-color: #fff;
+    padding: 10px;
+    height: 6rem;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.09); 
+}
+
+.title-section h2{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.title-section hr{
+    margin-top: 1rem;
+}
+
+.title-section p{
+    margin-top: .3rem;
+}
+
+.datails{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+}
+
+.Suppliers{
+    position: relative;
+    margin-top: 2em;
+    min-height: 700px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.15);
+    border-radius: 10px;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100px;
+}
+
+.cardHeader h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #110fd7;
+}
+
+.btn-cad-funcio{
+    width: 15rem;
+    height: 2.5rem;
+    background: transparent;
+    border: 1px solid #0807c3;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .1s all;
+}
+
+.btn-cad-funcio:hover{
+    background: #0807c3;
+    border: none;
+    color: #fafafa;
+    transition: .3s ease;
+}
+
+.details table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details table thead td{
+    font-weight: 600;
+}
+
+.details .Suppliers table tr{
+    color: #000;
+    border-bottom: 1px solid rgba(0,0,0,0.2);   
+}
+
+.details .Suppliers table tr:last-child{
+    border-bottom: none;
+}
+
+.details .Suppliers table tr td{
+    padding: 10px;   
+}
+
+.details .Suppliers table tr td:last-child{
+    text-align: center;
+}
+
+.details .Suppliers table tr td:nth-child(2){
+    text-align: center;
+}
+
+.details .Suppliers table tr td:nth-child(3){
+    text-align: center;
+}
+
+.details .Suppliers table tr td:nth-child(4){
+    text-align: center;
+}
+
+.details .Suppliers table tr td:nth-child(5){
+    text-align: center;
+}
+
+.btn-editar{
+    width: 3rem;
+    height: 2.3rem;
+    background: #e6b726;
+    border-radius: 2px;
+    border: none;
+    transition: .5s ease;
+}
+
+.btn-editar i{
+    color: #333;
+}
+
+.btn-editar:hover{
+    background: #957100;
+}
+
+.btn-excluir{
+    width: 3rem;
+    height: 2.3rem;
+    background: #d51419;
+    border: none;
+    border-radius: 2px;
+    transition: .5s ease;
+}
+
+.btn-excluir i{
+    color: #333;
+}
+
+.btn-excluir:hover{
+    background: #950506;
+}
+
+.btn-infor{
+    width: 3rem;
+    height: 2.3rem;
+    background-color: #adc6db;
+    border: none;
+    border-radius: 2px;
+    transition: .5s ease;
+}
+
+.btn-infor i{
+    color: #333;
+}
+
+.btn-infor:hover{
+    background: #678092;
+}
